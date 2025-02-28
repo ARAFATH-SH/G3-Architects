@@ -101,7 +101,7 @@ main > section{
     font-weight: 500;
     max-width: 400px;
 }
-.feature-description{
+description{
     margin-bottom: 35px;
 }
 /* responsive */
