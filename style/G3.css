@@ -170,6 +170,9 @@ description{
     .features{
         margin-left: 20px;
     }
+    .some-facts{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
