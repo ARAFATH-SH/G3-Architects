@@ -104,13 +104,57 @@ main > section{
 description{
     margin-bottom: 35px;
 }
+.fact-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
+.fact-description{
+    margin-bottom: 2rem;
+    max-width: 545px;
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.fact{
+    display: flex;
+    border: 2px solid #FF900E;
+    border-radius: 5px;
+    width: 220px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fact-icon{
+    margin-top: 25px;
+}
+.fact-number{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
 /* responsive */
 @media screen and (max-width: 576px){
     .nav-bar, .nav-links, .teams{
         flex-direction: column;
     }
-    .team-image-container{
+    .team-image-container,.fact-container{
         grid-template-columns: 1fr;
+    }
+    .fact-container{
+        justify-items: center;
+        gap: 1rem;
     }
     .features{
         margin-left: 20px;
